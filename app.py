@@ -8,7 +8,7 @@ app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 app.config['MAIL_PORT'] = 465
 app.config['MAIL_USERNAME'] = 'chris4corneliuscampaign@gmail.com'
-app.config['MAIL_PASSWORD'] = 'dxwmqskzxfkssdcs'
+app.config['MAIL_PASSWORD'] = #Hidden from Github Public View
 
 mail = Mail(app)
 
