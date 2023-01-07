@@ -1,459 +1,393 @@
 
 /*General*/
 body{
-height:100%;
-padding:0;
-margin:0;
-}
-
-/*Navigation Bar*/
-.navbar{
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    list-style-type: none;
-    background: linear-gradient(90deg, rgb(19, 76, 141),rgb(219, 223, 227));
-    margin: 0;
-    padding: 0;
-}
-
-.menu-url{
-    color:rgb(19, 76, 141);
-    text-decoration: none;
-    font-size:1.3em;
-    padding: 0em .95em;
-}
-
-.es-color{
-    color:rgb(47, 164, 131);
-}
-
-a:hover{
-    color:rgb(2, 108, 200);
-}
-
-
-
-/*Email Section*/
-.parent-email-section {
-    background: linear-gradient(90deg, rgb(19, 76, 141),rgb(95, 148, 188),rgb(148, 181, 208),rgb(204, 225, 239),rgb(255, 255, 255));
-    position: relative;
-}
-
-.row {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;  
-}
-
-.fit-h1 {
-    font-family: 'Prata', serif;
-    color:rgb(7, 52, 94);
-    text-align: center;
-    justify-content: center;
-    font-size: 4.33em;
-    height: 80%;
-}
-
-.p-email-1{
-    font-family: 'Prata', serif;
-    font-size: 1.4em;
-    color:rgb(7, 52, 94);
-    text-align: center;
-    line-height: 2em;
-    position: absolute;
-    bottom: 13.6vh;
-}
-
-.p-email-2{
-    font-family: 'Prata', serif;
-    font-size: 1.4em;
-    color:rgb(7, 52, 94);
-    text-align: center;
-    line-height: 2em;
-    position: absolute;
-    bottom:8vh;
-}
-
-
-.child-1-logo {
-    margin-bottom: 0;
-    width: 147px;
-    height: 109px;
-    align-self: flex-start;
-    padding-top: .3em;
-    margin-right: auto;
-}
-
-.child-2-logo-header {
-    display: flex;
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    height: 60%;
-    width: 32em;
-}
-
-.child-3-portrait{
-    position:relative;
-    display: flex;
-    right: 1.4vw;
- }
-
-.child-4-email-form{
-    position: absolute;
-    bottom: .6em;
-}
-
-.mail-button{
-    color:rgb(215, 228, 228);
-    background-color: rgb(35, 68, 121);
-    border: 0;
-    border-radius: .4em;
-    font-size: .87em;
-    padding-left: .93em;
-    padding-right: .93em;
-    padding-top: .72em;
-    padding-bottom: .72em;
-}
-
-.mail-button:hover{
-    background-color: rgb(69, 99, 147);
-}
-
-.mail-box{
-    height:2.2em;
-    border-radius: .4em;
-    border-style: hidden;
-}
-
-@media (max-width: 1525px) {
-    .portrait-image{
-        width: 31.5em;
-        height: 41.1875em;
-     }
-}
-
-@media (max-width: 1395px) {
-    .row {
-        flex-direction: column;
-        gap: 1em;
-    }
-
-    .menu-url{
-        font-size:1.19em;
-    }
-
-    .child-3-portrait{
-        bottom: 3.8em;
-        left: 5em;       
-     }
-
-     .portrait-image{
-        width: 31.5em;
-        height: 41.1875em;
-     }
-
-     .child-2-logo-header {
-        top:10.5vh;
-    }
-
-    .child-4-email-form{
-        bottom: 10.5vh;
-    }
-
-    .p-email-1{
-        font-size: 1.37em;
-        left: -5.3vw;
-        bottom: 27%;
-        width: 9.5em;
-    }
-
-    .p-email-2{
-        font-size: 1.37em;
-        left: 67%;
-        bottom: 21%;
-      }
-
-      .parent-email-section {
-        height: 45em;   
-    }
-}
-
-/*Instagram Section*/
-.parent-instagram-section {
-    background: linear-gradient(90deg,rgb(238, 239, 241),rgb(148, 198, 204),rgb(255, 255, 255));
-    position: relative;
-    height: 38.125em;
-}
-
-.child-1-embed{
-    background: linear-gradient(90deg,rgb(148, 198, 204),rgb(231, 234, 237),rgb(148, 198, 204));
-    border-radius: .4em;
-    align-content: flex-end;
-    width:60%;
-    height:31.25em;
-    position:relative;
-    left:32%;
-    bottom: -3em;
-    padding-top: .375em;
-    padding-bottom: .4375em;
-  }
-
-
-.insta-text:hover{
-    background-color:rgb(56, 110, 124);
-    color:rgb(250, 250, 250);
-}
-
-.insta-logo{
-    position: relative;
-    bottom: -3em;
-    left: -66%;
-}
-
-.insta-logo .img-top {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 99;
-}
-
-.insta-logo:hover .img-top {
-    display: inline;
-}
-
-.taggbox::-webkit-scrollbar {
-    width: 11px;
-  }
-
-.taggbox::-webkit-scrollbar-track {
-    background: rgb(69, 109, 119);
-    border-radius: 10px;
-}
-
-.taggbox::-webkit-scrollbar-thumb {
-    background: rgb(12, 81, 99);
-    border-radius: 10px;
-  }
-
-.taggbox::-webkit-scrollbar-thumb:hover {
-    background: rgb(5, 64, 78);
-    border-radius: 10px;
-  }
-
-html::-webkit-scrollbar-thumb:active {
-    background: rgb(4, 44, 54);
-    border-radius: 10px;
-  }
-
-  @media (max-width: 1395px) {
-    .insta-logo{
-        position: absolute;
-        bottom:185px;
-        left: 2%;
-    }   
-    .insta-logo img{
-        width: 321px;
-        height: 239px;
-    }
-    .child-1-embed{
-        width:60%;
-        height:31.25em;
-        position:absolute;
-        left:32%;
-        bottom: 3em;
-    }
-}
-
-@media (max-width: 1092px) {
-    .insta-logo img{
-        width: 243px;
-        height: 181px; 
-        left: 15px;
-    }  
-
-    .insta-logo{
-        position: absolute;
-        left:2%;
-    }
-
-}
-
-@media (max-width: 830px) {
-
-    .insta-logo{
-        position: absolute;
-        top:2%;
-        left: 35%;
-    }   
-    .insta-logo img{
-        width: 243px;
-        height: 181px;
-
-    }
-    .child-1-embed{
-        padding-right: 22em;
-        border-right: 20em;
-        left:5%;
-        height:60%;
-        width:90%;
-        bottom:2%;
-    }
-    }
-
-    @media (max-width: 550px) {
-
-        .insta-logo{
-            position: absolute;
-            left: 25%;
-        }   
-    }
-
-
-/*Issues Section*/
-.issues-section {
-    background: linear-gradient(90deg,rgb(194, 215, 236),rgb(148, 198, 204),rgb(255, 255, 255));
-    position: relative;
-    height:610px;
-    display: flex;
-    justify-content: center;
-}
-
-
-.issues-section a { 
-    text-decoration: none; 
-}
-
-.issues-box{
-    display: flexbox;
-}
-
-.issues-headline-text{
-    font-family: 'Prata', cursive;
-    font-size: 96px;
-    text-decoration: underline;
-    text-decoration-thickness: 8px;
-    display: flex;
-    justify-content: center;
-  }
-
-.issues-headline-text a{
-color: rgb(39, 96, 139);
-}
-
-.issues-headline-text a:hover{
-    color: rgb(20, 83, 131);
-    }
-
-.issues-text-box{
-    font-family: 'Prata', cursive;
-    font-size: 3.375em;
-    display: flex;
-    flex-direction:column;
-    gap:.4em;
-    }
-
-
-
-.issues-text{
-    background-color:rgb(33, 83, 130);
-    padding-left: 155px;
-    padding-right: 80px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-style:solid;
-    border-width: 4px;
-    border-color: rgb(43, 121, 181);
-    border-radius: 3em;
-    margin: 0;
-}
-
-.color-fix{
-    color:rgb(56, 153, 202);
-} 
-
-.issues-text-box a:hover{
-    color:rgb(121, 182, 212);
-} 
-
-.issues-text-box a:visited{
-    color:rgb(148, 175, 188);
-} 
-
-.issues-text-box a:visited:hover{
-    color:rgb(121, 182, 212);
-}
-
-
-@media (max-width: 648px) {
-
-    .issues-text{
-        padding-left: 100px;
-        padding-right: 70px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        font-size: .9em;
-    }   
-}
-
-
-/*Footer*/
-.footer-container{
-    background: rgb(19, 76, 141);
-    height:auto;
-    width:100%;
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    flex-direction:row;
-    align-items: stretch;
-    justify-content: space-between;
+    padding:0;
     margin:0;
-    border:0;
+    overflow-x: hidden;
 }
+    
+    /*Navigation Bar*/
+    .navbar{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        list-style-type: none;
+        background: linear-gradient(90deg, rgb(19, 76, 141),rgb(219, 223, 227));
+        margin: 0;
+        padding: 0;
+        width:100%;
+    }
+    
+    .menu-url{
+        color:rgb(19, 76, 141);
+        text-decoration: none;
+        font-size:1.3em;
+        padding: 0em .95em;
+        width:100%;
+    }
+    
+    .es-color{
+        color:rgb(47, 164, 131);
+    }
+    
+    a:hover{
+        color:rgb(2, 108, 200);
+    }
+    
+    /*Home-Section*/
+    .home-section-container {
+        background: linear-gradient(90deg, rgb(19, 76, 141),rgb(95, 148, 188),rgb(148, 181, 208),rgb(204, 225, 239),rgb(255, 255, 255));
+        height:auto;
+        width:100%;
+        display:grid;
+        grid-template-columns: 1fr auto 1fr;
+        gap: 2em;
+        flex-direction:row;
+        align-items: stretch;
+        justify-content: space-between;
+        margin:0;
+        border:0;
+    }
+    
+    .box{
+        height:auto;
+        width:auto;
+        padding: 1.1em;
+        width: 5rem;
+        height: 5rem;   
+    }
+    
+    .logo{
+        margin-bottom: 0;
+        width: 147px;
+        height: 109px;
+        align-self: flex-start;
+        padding-top:.3em;
+        margin-right: auto;
+        background-color: none;
+    }
+    
+    .top-text{
+        grid-column: 2;
+        grid-row: 1; 
+    }
+    
+    .fit-h1{
+        color:rgb(7, 52, 94);
+        font-family: 'Prata', serif;
+        font-size: 4.33em;
+        text-align: center;
+        width:100%;
+        height:auto;
+    }
+    
+    .p-email{
+        font-family: 'Prata', serif;
+        font-size: 1.4em;
+        color:rgb(7, 52, 94);
+        text-align: center;
+        line-height: 2em;
+    }
+    
+    .portrait{
+        margin-top: auto;
+        height:auto;
+        grid-column: 3;
+        grid-row: 1;
+        margin-bottom: -.25rem;  
+    }
+    
+    .portrait-image{
+        width: 23em;
+        height: 28em;
+    }
+    
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;  
+        margin-top: 4em;
+        border-width: 100%;
+    }
+    
+    .mail-button{
+        color:rgb(215, 228, 228);
+        background-color: rgb(35, 68, 121);
+        border: 0;
+        border-radius: .4em;
+        font-size: .87em;
+        padding-top: .72em;
+        padding-bottom: .72em;
+    }
+    
+    .mail-button:hover{
+        background-color: rgb(69, 99, 147);
+    }
+    
+    .mail-box{
+        height:2.2em;
+        border-radius: .4em;
+        border-style: hidden;
+    }
 
-.footer-box-1{
-    width: 5rem;
-    height: 5rem;
-    color:white;
-    text-align: center;
-    font-size:25px;
-    padding-left: 2em;
-}
-
-.footer-box-2{
-    width: 5rem;
-    height: 5rem;  
-}
-
-.footer-box-3{
-    width: 5rem;
-    height: 5rem;  
-}
-
-.footer-list{
-    justify-content: start;
-    flex-direction: column;   
-    list-style-type: none;
-    font-size: 18px;
-    text-decoration: none;
-
-}
-
-footer a:link{
-    color:rgb(248, 250, 251);
-} 
-
-.footer-list p{
-    color:white;
-}
-
-.footer-list a:hover p{
-    color:rgb(121, 167, 188);
-}
-
-.footer-list a:visited p{
-    color:rgb(121, 167, 188);
-}
+    @media (max-width:1136px){
+        
+        .fit-h1{
+            font-size: 3em;
+        }
+    
+    
+        .row {
+            margin-top: 0;
+        }
+    
+        .mail-box{
+            height:2em;
+            width: 9em;
+            font-size: 1.3em;
+        }
+    
+        .name-box{
+            margin-bottom: .8em;
+        }
+    
+        .mail-button{
+            height:2.2em;
+            width: 8em;
+            font-size: 1em;
+            margin-top: .55em;
+            margin-right: 11em;
+        }
+    
+        .p-email{
+            font-size: 1.15em;
+        }
+    }
+    
+    /*Instagram-Section*/
+    .instagram-section-container {
+        background: linear-gradient(90deg,rgb(238, 239, 241),rgb(148, 198, 204),rgb(255, 255, 255));
+        height:auto;
+        width:100%;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+        align-items: stretch;
+        justify-content: space-between;
+        margin:0;
+        border:0;
+    }
+    
+    .taggbox-container{
+        margin:1em;
+        grid-column: 2;
+        grid-row: 1;
+        height: 30em;
+        margin-right: 2%;
+    }
+    
+    
+    .insta-text:hover{
+        background-color:rgb(56, 110, 124);
+        color:rgb(250, 250, 250);
+    }
+    
+    .insta-logo{
+        grid-column: 1;
+        grid-row: 1;
+        margin:1em;
+        margin-top: 4em;
+        position:relative;
+    }
+    
+    
+    .insta-logo .img-top {
+        display: none;
+        z-index: 99;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    .insta-logo:hover .img-top {
+        display: inline-block;
+    }
+    
+    .taggbox::-webkit-scrollbar {
+        width: 11px;
+    }
+    
+    .taggbox::-webkit-scrollbar-track {
+        background: rgb(69, 109, 119);
+        border-radius: 10px;
+    }
+    
+    .taggbox::-webkit-scrollbar-thumb {
+        background: rgb(12, 81, 99);
+        border-radius: 10px;
+    }
+    
+    .taggbox::-webkit-scrollbar-thumb:hover {
+        background: rgb(5, 64, 78);
+        border-radius: 10px;
+    }
+    
+    html::-webkit-scrollbar-thumb:active {
+        background: rgb(4, 44, 54);
+        border-radius: 10px;
+    }
+    
+    @media (max-width:760px){
+        .insta-logo{
+            display: none;
+        }
+    
+        .taggbox-container{
+            grid-column: 1;
+            width: 30em;
+            height: 30em;
+            margin: 1em;
+            margin-left: 14%;
+        }
+    }
+    
+    /*Issues Section*/
+    .issues-section-container {
+        background: linear-gradient(90deg,rgb(194, 215, 236),rgb(127, 171, 186),rgb(255, 255, 255));
+        height:auto;
+        width:100%;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2em;
+        align-items: stretch;
+        justify-content: space-between;
+        margin:0;
+        border:0;
+    }
+    
+    .issues-headline-text{
+        font-family: 'Prata', cursive;
+        font-size: 96px;
+        text-decoration: underline;
+        text-decoration-thickness: 8px;
+        display: flex;
+        justify-content: center;
+        grid-column: 2;
+        grid-row: 1;
+        margin-top: .5em;
+    }
+    
+    .issues-headline-text a:visited{
+        color:rgb(55, 137, 178);
+    }
+    
+    .issues-headline-text a:hover{
+        color:rgb(77, 154, 193);
+    }
+    
+    .issues-text-box{
+        font-family: 'Prata', cursive;
+        font-size: 3.375em;
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        gap:.4em;
+        grid-column: 2;
+        grid-row: 2;
+        margin-bottom: 1em;
+        }
+    
+    
+        .issues-text{
+            align-items: center;
+            background-color:rgb(33, 83, 130);
+            padding-left: 120px;
+            padding-right: 80px;
+            padding-top: .5em;
+            padding-bottom: .5em;
+            border-style:solid;
+            border-width: .5em;
+            border-color: rgb(43, 121, 181);
+            border-radius: 3em;
+            margin: 0;
+            
+        }
+    
+        .color-fix{
+            color:rgb(56, 153, 202);
+        } 
+    
+        .issues-text-box a:link{
+            text-decoration: none;
+        } 
+        
+        .issues-text-box a:hover{
+            color:rgb(121, 182, 212);
+            text-decoration: none;
+        } 
+        
+        .issues-text-box a:visited{
+            color:rgb(148, 175, 188);
+            text-decoration: none;
+        } 
+        
+        .issues-text-box a:visited:hover{
+            color:rgb(121, 182, 212);
+            text-decoration: none;
+        }
+    
+        .public-trust-text{
+            font-size: .85em;
+            padding-top: .9em;
+            padding-bottom: .9em;
+        }
+    
+    /*Footer*/
+    .footer-container{
+        background: rgb(19, 76, 141);
+        height:auto;
+        width:100%;
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        flex-direction:row;
+        align-items: stretch;
+        justify-content: space-between;
+        margin:0;
+        border:0;
+        overflow-y: hidden;
+    }
+    
+    .footer-box-1{
+        width: 5rem;
+        height: 5rem;
+        color:white;
+        text-align: center;
+        font-size:25px;
+        padding-left: 5.5em;
+    }
+    
+    .footer-list{
+        justify-content: start;
+        flex-direction: column;   
+        list-style-type: none;
+        font-size: 18px;
+        text-decoration: none;
+    }
+    
+    footer a:link{
+        color:rgb(248, 250, 251);
+    } 
+    
+    .footer-list p{
+        color:white;
+    }
+    
+    .footer-list a:hover p{
+        color:rgb(121, 167, 188);
+    }
+    
+    .footer-list a:visited p{
+        color:rgb(121, 167, 188);
+    }
